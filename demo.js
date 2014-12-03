@@ -1,4 +1,5 @@
 var tor_browser_version_to_tails_version = {
+  "31.3": "1.2.1",
   "31.1/31.1.1/31.2": "1.2",
   "24.8/24.8.1": "1.1.1/1.1.2",
   "24.7": "1.1",
@@ -20,7 +21,8 @@ var table_24 = [
 // git log -p origin/esr31 browser/config/version.txt security/manager/boot/src/nsSTSPreloadList.inc
 var table_31 = [
   // [ Firefox ESR release, website in HSTS list diff, path to a valid image ]
-  [ "31.1/31.1.1/31.2", "anycoin.me", "/favicon.ico" ],
+  [ "31.3", "in.xero.com", "/favicon.ico" ],
+  [ "31.1/31.1.1/31.2", "wepay.com", "/favicon.ico" ]
 ]
 var table_iterator = 0;
 function determine_tor_browser_version(callback) {
